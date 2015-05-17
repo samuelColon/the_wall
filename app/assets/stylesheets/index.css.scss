@@ -1,0 +1,30 @@
+#posts {
+	.post {
+    background: #FFFFFF;  
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    float: left;
+    width: 30%; 
+    text-align: center;
+    align: "center";
+	  margin-left: 10px;
+	  margin-top: 5px;
+	  height: 400px;
+
+    .post_image {
+      height: 200px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: .3rem .3rem 0 0;
+      }
+    }
+    .author {
+      font-size: 1rem;
+    }
+
+    h2.header {
+      font-size: 1.4rem;
+    }
+	}
+}

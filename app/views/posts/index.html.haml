@@ -1,0 +1,11 @@
+#posts
+  - @posts.each do |post|
+    .post
+      %h2.header= link_to post.title, post
+      .post_image
+        = link_to (image_tag post.image.url(:small)), post
+      %p.author 
+        created by #{ User.find_by_id(post.user_id).name} about 5 minutes ago
+      %p
+        = pluralize(post.comments.count, "Comment")
+        = pluralize(post.get_upvotes.size, "Like")
